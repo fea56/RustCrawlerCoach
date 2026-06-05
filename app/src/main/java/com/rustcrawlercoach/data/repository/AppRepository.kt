@@ -186,7 +186,7 @@ class AppRepository(
         val existing = codeFileDao.getCodeFileByName(chapterId, fileName)
         return if (existing != null) {
             codeFileDao.update(existing.copy(content = content))
-            existing.id
+            existing.id.toLong()
         } else {
             codeFileDao.insert(CodeFile(chapterId = chapterId, fileName = fileName, content = content))
         }
