@@ -82,8 +82,9 @@ dependencies {
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
-    // CodeView for syntax highlighting
-    implementation("com.github.AmrDeveloper:CodeView:1.1.0")
+    // CodeView for syntax highlighting - REMOVED due to JitPack build issues
+    // If you need code highlighting, use: implementation("io.noties.markwon:core:4.6.2")
+    // or another alternative library
 
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
